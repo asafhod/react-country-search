@@ -1,0 +1,13 @@
+[
+  { "name": "Africa", "adj": "African", "id": "afr" },
+  { "name": "Antarctic", "adj": "Antarctic", "id": "ant" },
+  { "name": "Arctic", "adj": "Arctic", "id": "arc" },
+  { "name": "Asia", "adj": "Asian", "id": "asa" },
+  { "name": "Caribbean", "adj": "Caribbean", "id": "crb" },
+  { "name": "Central America", "adj": "Central American", "id": "cam" },
+  { "name": "Europe", "adj": "European", "id": "eur" },
+  { "name": "Middle East", "adj": "Middle Eastern", "id": "mde" },
+  { "name": "North America", "adj": "North American", "id": "nam" },
+  { "name": "Oceania", "adj": "Oceanian", "id": "ocn" },
+  { "name": "South America", "adj": "South American", "id": "sam" }
+]

@@ -1,0 +1,49 @@
+{
+  "name": "react-country-search",
+  "version": "1.0.0",
+  "description": "Filterable list of countries with interactive map",
+  "main": "build/index.js",
+  "keywords": [
+    "react",
+    "component",
+    "country",
+    "countries",
+    "world",
+    "map",
+    "interactive",
+    "selectable",
+    "pan",
+    "zoom",
+    "search",
+    "region",
+    "language",
+    "user",
+    "interface",
+    "ui"
+  ],
+  "author": "Asaf Hod",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asafhod/react-country-search.git"
+  },
+  "dependencies": {
+    "react-svg-pan-zoom": "^3.12.1",
+    "use-resize-observer": "^9.1.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.18.12",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@types/react-svg-pan-zoom": "^3.3.5",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "build": "react-scripts build"
+  }
+}

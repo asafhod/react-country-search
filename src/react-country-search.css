@@ -1,0 +1,375 @@
+/* container for entire component */
+.country-search {
+  background-color: #fff;
+  max-width: 600px;
+  min-width: 300px;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.02);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: #4a4a4a;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* default spacing for entire component */
+.country-search * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* search results list of countries and region/language suggestions */
+.country-search-results {
+  height: 283px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* search results list scrollbar */
+.country-search-results::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 5px;
+}
+
+/* search results list scrollbar track */
+.country-search-results::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+/* search result list scrollbar thumb */
+.country-search-results::-webkit-scrollbar-thumb {
+  background: #b3b3b3;
+  border-radius: 5px;
+}
+
+/* search result which is a country */
+.country-search-result {
+  align-items: center;
+  color: #363636;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.5em 0.75em;
+  cursor: pointer;
+}
+
+/* checkbox for country search result */
+.country-search-result-chk {
+  margin-right: 0.75em;
+  vertical-align: baseline;
+  cursor: pointer;
+}
+
+/* icons for country flags and region/language suggestions */
+.country-search-flag-icon,
+.country-search-region-lang-icon {
+  margin-right: 0.3em;
+  vertical-align: -0.18em;
+  height: auto;
+  max-width: 100%;
+}
+
+/* specific styling for country flag icons */
+.country-search-flag-icon {
+  border-radius: 50%;
+  border: 1px solid #000000;
+  background-color: #fff;
+}
+
+/* border between search results */
+.country-search-result:not(:last-child) {
+  border-bottom: 1px solid #ededed;
+}
+
+/* rounded corners on final result to match container */
+.country-search-result:last-child {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+/* item displayed when no results are found, hidden by default */
+.country-search-no-results {
+  align-items: center;
+  color: #363636;
+  display: none;
+  justify-content: flex-start;
+  padding: 0.5em 0.75em;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+/* displays the "No results" item when no results are found */
+.country-search-no-results:first-child {
+  display: list-item;
+}
+
+/* section block for the search filter input */
+.country-search-filter-block {
+  align-items: center;
+  color: #363636;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.5em 0.75em;
+  border-bottom: 1px solid #ededed;
+}
+
+/* container for the search filter input */
+.country-search-filter-container {
+  clear: both;
+  font-size: 1em;
+  position: relative;
+  text-align: inherit;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 100%;
+}
+
+/* search filter input */
+.country-search-filter {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-color: #dbdbdb;
+  border-radius: 4px;
+  box-shadow: inset 0 0.0625em 0.125em rgba(10, 10, 10, 0.05);
+  color: #363636;
+  display: inline-flex;
+  font-size: 1em;
+  font-family: inherit;
+  height: 2.5em;
+  justify-content: flex-start;
+  line-height: 1.5;
+  max-width: 100%;
+  width: 100%;
+  padding-bottom: calc(0.5em - 1px);
+  padding-top: calc(0.5em - 1px);
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+  position: relative;
+  vertical-align: top;
+  writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: start;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  margin: 0;
+  background-color: field;
+}
+
+.country-search-filter:focus {
+  border-color: #485fc7;
+  box-shadow: 0 0 0 0.125em rgba(72, 95, 199, 0.25);
+  outline: 0;
+}
+
+.country-search-filter::-moz-placeholder {
+  color: rgba(54, 54, 54, 0.3);
+}
+
+.country-search-filter:-moz-placeholder {
+  color: rgba(54, 54, 54, 0.3);
+}
+
+.country-search-filter::-webkit-input-placeholder {
+  color: rgba(54, 54, 54, 0.3);
+}
+
+.country-search-filter:-ms-input-placeholder {
+  color: rgba(54, 54, 54, 0.3);
+}
+
+/* hides the padding for the search filter clear icon when it isn't shown */
+/* this prevents the placeholder text from being cut off on smaller screens */
+.country-search-filter:placeholder-shown {
+  padding-right: 0;
+}
+
+/* magnifying glass icon in search filter */
+.country-filter-search-icon {
+  color: #dbdbdb;
+  height: 2.5em;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 2.5em;
+  z-index: 4;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  left: 0;
+}
+
+/* x icon that clears the search filter, hidden by default */
+.country-filter-clear-icon {
+  color: #dbdbdb;
+  height: 2.5em;
+  position: absolute;
+  top: 0;
+  width: 2.5em;
+  z-index: 4;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  display: none;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+/* displays the search filter clear icon when text has been entered */
+.country-search-filter:not([value=""]) + .country-filter-clear-icon {
+  display: inline-flex;
+}
+
+/* images for the search and clear icons */
+.country-filter-icon-image {
+  height: auto;
+  max-width: 100%;
+}
+
+/* section block for the Select All and Select None buttons */
+.country-all-none-block {
+  align-items: flex-end;
+  display: flex;
+  font-size: 0.875em;
+  justify-content: center;
+  border-bottom: 1px solid #ededed;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Select All and Select None buttons */
+.country-all-none-btn {
+  border-bottom: 1px solid #dbdbdb;
+  margin-bottom: -1px;
+  padding: 0.5em;
+  color: #485fc7;
+  cursor: pointer;
+}
+
+/* container for the interactive map */
+.country-search-map {
+  align-items: center;
+  color: #363636;
+  display: block;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 25/11.02;
+  min-height: 0;
+  justify-content: flex-start;
+  padding: 0.5em 0.75em;
+  border-bottom: 1px solid #ededed;
+}
+
+/* adjust aspect ratio of map when Antarctica is displayed */
+.country-search-map.with-antarctica {
+  aspect-ratio: 5/2.53;
+}
+
+/* styling for viewer from the react-svg-pan-zoom component */
+.country-search-map-panzoom {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* root svg element of the map */
+#map-root {
+  display: block;
+}
+
+/* all land on the map */
+.map-land {
+  fill: rgb(160, 160, 160);
+  stroke: #050505;
+  stroke-width: 0.5;
+  fill-rule: evenodd;
+}
+
+/* dashed border, used on map for disputed territories */
+.country-border-dashed {
+  stroke-dasharray: 0.5;
+  stroke-width: 0.3;
+}
+
+/* thinner border, used on map to provide visual clarity for islands and very small nations */
+.country-border-thin {
+  stroke-width: 0.4;
+}
+
+/* colors on map for selected countries */
+.country-highlight.map-color-1 {
+  fill: #1381ff;
+}
+
+.country-highlight.map-color-2 {
+  fill: #d60819;
+}
+
+.country-highlight.map-color-3 {
+  fill: #02be50;
+}
+
+.country-highlight.map-color-4 {
+  fill: #f56200;
+}
+
+/* mouse hover styles for the search filter, buttons, result list, and map */
+@media (hover: hover) and (pointer: fine) {
+  .country-search-filter:not(:focus):hover {
+    border-color: #b5b5b5;
+  }
+
+  .country-all-none-btn:hover {
+    color: #363636;
+  }
+
+  .country-search-result:hover {
+    background-color: whitesmoke;
+  }
+
+  .country-search-results::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(119, 119, 119);
+  }
+
+  .map-land:hover {
+    fill: rgb(201, 200, 200);
+  }
+
+  .country-highlight.map-color-1:hover {
+    fill: #13a1ff;
+  }
+
+  .country-highlight.map-color-2:hover {
+    fill: #fc051a;
+  }
+
+  .country-highlight.map-color-3:hover {
+    fill: #03eb64;
+  }
+
+  .country-highlight.map-color-4:hover {
+    fill: #ff8800;
+  }
+}

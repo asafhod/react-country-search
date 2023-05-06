@@ -301,21 +301,21 @@
 
 /* all land on the map */
 .map-land {
-  fill: rgb(160, 160, 160);
-  stroke: #050505;
-  stroke-width: 0.5;
+  fill: rgb(209, 209, 209);
+  stroke: #3e3e3e;
+  stroke-width: 0.45;
   fill-rule: evenodd;
 }
 
 /* dashed border, used on map for disputed territories */
 .country-border-dashed {
-  stroke-dasharray: 0.5;
-  stroke-width: 0.3;
+  stroke-dasharray: 2.75;
+  stroke-width: 0.45;
 }
 
 /* thinner border, used on map to provide visual clarity for islands and very small nations */
 .country-border-thin {
-  stroke-width: 0.4;
+  stroke-width: 0.25;
 }
 
 /* colors on map for selected countries */
@@ -354,7 +354,7 @@
   }
 
   .map-land:hover {
-    fill: rgb(201, 200, 200);
+    fill: rgb(229, 229, 229);
   }
 
   .country-highlight.map-color-1:hover {

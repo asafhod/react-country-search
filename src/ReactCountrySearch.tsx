@@ -23,7 +23,7 @@ const ReactCountrySearch = ({
   selectedCountries,
   setSelectedCountries,
   showMap = true,
-  mapBackground = "black",
+  mapBackground = "white",
   excludeTerritories = false,
   excludeAntarctica = true,
   filterByRegion = true,

@@ -11,7 +11,7 @@ function App() {
         selectedCountries={selectedCountries}
         setSelectedCountries={setSelectedCountries}
         showMap={true}
-        mapBackground={""}
+        // mapBackground={"white"}
         excludeTerritories={false}
         excludeAntarctica={true}
         filterByRegion={true}
@@ -19,7 +19,7 @@ function App() {
         onlyCommonLanguages={false}
       />
       {/* Testing data access from outside component */}
-      <span style={{ fontSize: "10.47px" }}>{Array.from(selectedCountries.values()).join(" ")}</span>
+      {/* <span style={{ fontSize: "10.47px" }}>{Array.from(selectedCountries.values()).join(" ")}</span> */}
     </div>
   );
 }

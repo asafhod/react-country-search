@@ -36,7 +36,10 @@ function App() {
   // the output can be accessed by calling values() or keys(), then converting to an array
   return (
     <>
-      <ReactCountrySearch selectedCountries={selectedCountries} setSelectedCountries={setSelectedCountries} />
+      <ReactCountrySearch
+        selectedCountries={selectedCountries}
+        setSelectedCountries={setSelectedCountries}
+      />
 
       {/* selectedCountries.values() will provide the output as country names */}
       {Array.from(selectedCountries.values())}

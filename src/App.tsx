@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ReactCountrySearch from "./ReactCountrySearch";
-import { SelectedCountries } from "./types";
+import type { SelectedCountries } from "./types";
 
 function App() {
   const [selectedCountries, setSelectedCountries] = useState<SelectedCountries>(new Map());

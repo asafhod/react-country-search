@@ -43,7 +43,7 @@ countries by name, region, or language.
                 {/* selectedCountries.values() will provide the output as country names */}
                 {Array.from(selectedCountries.values())}
 
-                {/* Object.keys() will provide the output as country ISO codes */}
+                {/* selectedCountries.keys() will provide the output as country ISO codes */}
                 {Array.from(selectedCountries.keys())}
             </>
         );

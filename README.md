@@ -25,7 +25,7 @@ countries by name, region, or language.
 
     // import the component and the SelectedCountries type
     import ReactCountrySearch from "./ReactCountrySearch";
-    import type { SelectedCountries } from "./ReactCountrySearch/types";
+    import type { SelectedCountries } from "./types";
 
     function App() {
         // set up the selectedCountries state and default it to a new Map

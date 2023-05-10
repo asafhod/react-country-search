@@ -1,7 +1,7 @@
 # react-country-search
 
 react-country-search is a React component which allows the user to select countries (and territories)
-from a list, or from an interactive world map. The user can narrow down the list by searching for
+from a filterable list, or from an interactive world map. The user can narrow down the list by searching for
 countries by name, region, or language.
 
 **Demo**: https://reactcountrysearch.netlify.app/

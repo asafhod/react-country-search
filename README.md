@@ -20,36 +20,35 @@ countries by name, region, or language.
 
 # Usage
 
-    // import useState
-    import { useState } from "react";
+```javascript
+// import useState
+import { useState } from "react";
 
-    // import the component and the SelectedCountries type
-    import ReactCountrySearch from "./ReactCountrySearch";
-    import type { SelectedCountries } from "./types";
+// import the component and the SelectedCountries type
+import ReactCountrySearch from "./ReactCountrySearch";
+import type { SelectedCountries } from "./types";
 
-    function App() {
-        // set up the selectedCountries state and default it to a new Map
-        const [selectedCountries, setSelectedCountries] = useState<SelectedCountries>(new Map());
+function App() {
+  // set up the selectedCountries state and default it to a new Map
+  const [selectedCountries, setSelectedCountries] = useState < SelectedCountries > new Map();
 
-        // pass the selectedCountries state and setter fuction to the component as props
-        // the output can be accessed by calling values() or keys(), then converting to an array
-        return (
-            <>
-                <ReactCountrySearch
-                    selectedCountries={selectedCountries}
-                    setSelectedCountries={setSelectedCountries}
-                />
+  // pass the selectedCountries state and setter fuction to the component as props
+  // the output can be accessed by calling values() or keys(), then converting to an array
+  return (
+    <>
+      <ReactCountrySearch selectedCountries={selectedCountries} setSelectedCountries={setSelectedCountries} />
 
-                {/* selectedCountries.values() will provide the output as country names */}
-                {Array.from(selectedCountries.values())}
+      {/* selectedCountries.values() will provide the output as country names */}
+      {Array.from(selectedCountries.values())}
 
-                {/* selectedCountries.keys() will provide the output as country ISO codes */}
-                {Array.from(selectedCountries.keys())}
-            </>
-        );
-    }
+      {/* selectedCountries.keys() will provide the output as country ISO codes */}
+      {Array.from(selectedCountries.keys())}
+    </>
+  );
+}
 
-    export default App;
+export default App;
+```
 
 # Props
 

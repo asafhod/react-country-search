@@ -30,7 +30,7 @@ import type { SelectedCountries } from "./types";
 
 function App() {
   // set up the selectedCountries state and default it to a new Map
-  const [selectedCountries, setSelectedCountries] = useState <SelectedCountries>(new Map());
+  const [selectedCountries, setSelectedCountries] = useState<SelectedCountries>(new Map());
 
   // pass the selectedCountries state and setter fuction to the component as props
   // the output can be accessed by calling values() or keys(), then converting to an array
